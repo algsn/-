@@ -1,0 +1,182 @@
+#Mata Kuliah: Desain dan Analisis Algoritma
+1. Cari nilai KPK dari 3 dan 4
+
+#Algoritma:
+#1. buat fungsi kpk dengan argumen a dan b
+#2. buat kondisi jika a>b maka variabel terbesar = a
+#3. buat kondisi jika a<b maka variabel terbesar = b
+#4. buat perulangan while
+#5. buat kondisi jika terbesar % a = 0 dan terbesar % b = 0, maka buat variabel hasil =
+#terbesar dan perulangan dibreak dan lanjut ke nomor 7
+#6. jika kondisi diatas tidak terpenuhi, maka terbesar + 1 dan kembali mengulangi
+#perulangannya
+#7. simpan variabel hasil
+#8. tentukan isi dari variabel a dan b yaitu 3 dan 4
+#9. cetak hasil dari fungsi kpk dengan parameter a dan b
+#Pesudocode:
+#fungsi kpk(a, b)
+#if a>b: terbesar = a
+#else: terbesar = b
+#while: if terbesar % a == 0 and terbesar % b == 0: hasil = terbesar; break
+#else: terbesar + 1
+#simpan hasil
+#tampilkan hasil
+#Kode:
+
+def kpk(a, b):
+ if a > b:
+ terbesar = a
+ else:
+ terbesar = b
+ while True:
+ if terbesar % a == 0 and terbesar % b == 0:
+ hasil = terbesar
+ break
+ terbesar += 1
+ return hasil
+a = 3
+b = 4
+print("KPK dari", a, "dan", b, "adalah", kpk(a, b))
+
+12
+
+
+2. Fungsi untuk menukar posisi dua variabel x dan y, dengan kasus :
+Ada 2 buah: manggis dan pisang. Manggis di piring 1, Pisang di piring 2. Piring 3
+kosong.
+
+#Algoritma:
+#1. buat fungsi menukar dengan argumen x dan y
+#2. inisialisasi list dengan variabel piring dengan x, y, dan kosong
+#3. buat perulangan 0 sampai total index di variabel piring
+#4. isi variabel piring dengan index 2 dengan x
+#5. isi variabel piring dengan index 0 dengan y
+#6. isi variabel piring dengan index 1 dengan x
+#7. isi variabel piring dengan index 2 dengan kosong
+#8. tampilkan isi variabel piring
+#Pseudocode:
+#fungsi menukar(x, y)
+#piring = [x, y, ""]
+#for i dari 0 sampai jumlah index piring
+#piring[2] = x
+#piring[0] = y
+#piring[1] = x
+#piring[2] = ""
+#tampilkan piring
+#Kode:
+
+def menukar(x, y):
+ piring = [x, y, ""]
+ for i in range(len(piring)):
+ piring[2] = x
+ piring[0] = y
+ piring[1] = x
+ piring[2] = ""
+ print("piring", i+1, "=", str(piring[i]))
+x = "manggis"
+y = "pisang"
+print("piring 1 =", x)
+print("piring 2 =", y)
+print("piring 3 = ")
+print("\nHasil penukaran:")
+menukar(x, y)
+
+piring 1 = manggis
+piring 2 = pisang
+piring 3 = 
+
+Hasil penukaran:
+piring 1 = pisang
+piring 2 = manggis
+piring 3 = 
+
+3. Diketahui sebuah segitiga memiliki ukuran sebagai berikut:
+Alas 25
+Tinggi 30
+Hitung luas dari segitiga tersebut.
+Algoritma:
+1. Buat fungsi luas segitiga dengan argumen alas dan tinggi
+2. Mengembalikan nilai dengan rumus luas segitiga yaitu 0,5 x alas x tinggi
+3. Buat variabel alas dengan nilai 25
+4. Buat variabel tinggi dengan nilai 30
+5. Tampilkan fungsi dengan mengisi argumen alas dan tinggi
+Pseudocode:
+fungsi luas_segitiga(alas, tinggi)
+return 0.5*alas*tinggi
+alas = 25
+tinggi = 30
+tampilkan luas_segitiga
+Kode:
+def luas_segitiga(alas, tinggi):
+ return 0.5*alas*tinggi
+alas = 25
+tinggi = 30
+print("Alas =", alas, "\nTinggi =", tinggi, "\nLuas = ", luas_segitiga(alas, tinggi))
+4. Tentukan algoritma dan pseudocode luas jajar genjang (panjang = 5, tinggi = 3)
+Algoritma:
+1. Buat fungsi luas jajargenjang dengan argumen alas dan tinggi
+2. Mengembalikan nilai dengan rumus luas jajargenjang yaitu alas x tinggi
+3. Buat variabel alas dengan nilai 5
+4. Buat variabel tinggi dengan nilai 3
+5. Tampilkan fungsi dengan mengisi argumen alas dan tinggi
+Pseudocode:
+fungsi luas_jajargenjang(alas,tinggi)
+return alas*tinggi
+alas = 5
+tinggi = 3
+tampilkan luas_jajargenjang
+Kode:
+def luas_jajargenjang(alas, tinggi):
+ return alas*tinggi
+alas = 5
+tinggi = 3
+print("Alas =", alas, "\nTinggi =", tinggi, "\nLuas = ", luas_jajargenjang(alas, tinggi))
+5. Tentukan algoritma dan pseudocode volume tabung (jari-jari = 3, tinggi = 5)
+Algoritma:
+1. Import library math
+2. Buat fungsi volume tabung dengan argumen r dan t
+3. mengembalikan nilai dengan rumus volume tabung yaitu pi x r^2 x t
+4. Buat variabel jari jari dengan nilai 3
+5. Buat variabel tinggi dengan nilai 5
+6. Tampilkan fungsi dengan mengisi argumen r dan t
+Pseudocode
+import math
+fungsi volume_tabung(r, t)
+return pi*r**2*t
+jari_jari = 3
+tinggi = 5
+tampilkan volume_tabung
+Kode:
+import math
+def volume_tabung(r, t):
+ return math.pi*r**2*t
+jari_jari = 3
+tinggi = 5
+print("Jari-jari =", jari_jari, "\nTinggi =", tinggi, "\nLuas = ", volume_tabung(jari_jari,
+tinggi))
+6. Tentukan algoritma dan pseudocode volume kerucut (diameter = 5, tinggi = 4)
+Algoritma:
+1. import library math
+2. Buat fungsi volume kerucut dengan argumen d dan t
+3. Buat variabel r untuk jari-jari dengan nilai d/2 atau diameter / 2
+4. mengembalikan nilai dengan rumus volume kerucut yaitu 1/3 x pi x r^2 x t
+5. Buat variabel diameter dengan nilai 5
+6. Buat variabel tinggi dengan nilai 4
+7. Tampilkan fungsi dengan mengisi argumen d dan t
+Pseudocode:
+import math
+fungsi volume_kerucut(d,t)
+r = d/2
+return 1/3*pi*r**2*t
+diameter = 5
+tinggi = 4
+tampilkan volume_kerucut
+Kode:
+import math
+def volume_kerucut(d, t):
+ r = d/2
+ return 1/3*math.pi*r**2*t
+diameter = 5
+tinggi = 4
+print("Diameter =", diameter, "\nTinggi =", tinggi, "\nVolume = ",
+volume_kerucut(diameter, tinggi))
