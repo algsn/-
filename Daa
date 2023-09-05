@@ -38,6 +38,7 @@ a = 3
 b = 4
 print("KPK dari", a, "dan", b, "adalah", kpk(a, b))
 
+hasil:
 12
 
 
@@ -81,6 +82,8 @@ print("piring 3 = ")
 print("\nHasil penukaran:")
 menukar(x, y)
 
+hasil:
+
 piring 1 = manggis
 piring 2 = pisang
 piring 3 = 
@@ -91,62 +94,79 @@ piring 2 = manggis
 piring 3 = 
 
 3. Diketahui sebuah segitiga memiliki ukuran sebagai berikut:
-Alas 25
-Tinggi 30
-Hitung luas dari segitiga tersebut.
-Algoritma:
-1. Buat fungsi luas segitiga dengan argumen alas dan tinggi
-2. Mengembalikan nilai dengan rumus luas segitiga yaitu 0,5 x alas x tinggi
-3. Buat variabel alas dengan nilai 25
-4. Buat variabel tinggi dengan nilai 30
-5. Tampilkan fungsi dengan mengisi argumen alas dan tinggi
-Pseudocode:
-fungsi luas_segitiga(alas, tinggi)
-return 0.5*alas*tinggi
-alas = 25
-tinggi = 30
-tampilkan luas_segitiga
-Kode:
+
+#Alas 25
+#Tinggi 30
+#Hitung luas dari segitiga tersebut.
+#Algoritma:
+#1. Buat fungsi luas segitiga dengan argumen alas dan tinggi
+#2. Mengembalikan nilai dengan rumus luas segitiga yaitu 0,5 x alas x tinggi
+#3. Buat variabel alas dengan nilai 25
+#4. Buat variabel tinggi dengan nilai 30
+#5. Tampilkan fungsi dengan mengisi argumen alas dan tinggi
+#Pseudocode:
+#fungsi luas_segitiga(alas, tinggi)
+#return 0.5*alas*tinggi
+#alas = 25
+#tinggi = 30
+#tampilkan luas_segitiga
+#Kode:
+
 def luas_segitiga(alas, tinggi):
  return 0.5*alas*tinggi
 alas = 25
 tinggi = 30
 print("Alas =", alas, "\nTinggi =", tinggi, "\nLuas = ", luas_segitiga(alas, tinggi))
+
+hasil:
+Alas = 25 
+Tinggi = 30 
+Luas =  375.0
+
 4. Tentukan algoritma dan pseudocode luas jajar genjang (panjang = 5, tinggi = 3)
 Algoritma:
-1. Buat fungsi luas jajargenjang dengan argumen alas dan tinggi
-2. Mengembalikan nilai dengan rumus luas jajargenjang yaitu alas x tinggi
-3. Buat variabel alas dengan nilai 5
-4. Buat variabel tinggi dengan nilai 3
-5. Tampilkan fungsi dengan mengisi argumen alas dan tinggi
-Pseudocode:
-fungsi luas_jajargenjang(alas,tinggi)
-return alas*tinggi
-alas = 5
-tinggi = 3
-tampilkan luas_jajargenjang
-Kode:
+
+#1. Buat fungsi luas jajargenjang dengan argumen alas dan tinggi
+#2. Mengembalikan nilai dengan rumus luas jajargenjang yaitu alas x tinggi
+#3. Buat variabel alas dengan nilai 5
+#4. Buat variabel tinggi dengan nilai 3
+#5. Tampilkan fungsi dengan mengisi argumen alas dan tinggi
+#Pseudocode:
+#fungsi luas_jajargenjang(alas,tinggi)
+#return alas*tinggi
+#alas = 5
+#tinggi = 3
+#tampilkan luas_jajargenjang
+#Kode:
+
 def luas_jajargenjang(alas, tinggi):
  return alas*tinggi
 alas = 5
 tinggi = 3
 print("Alas =", alas, "\nTinggi =", tinggi, "\nLuas = ", luas_jajargenjang(alas, tinggi))
+
+hasil:
+Alas = 5 
+Tinggi = 3 
+Luas =  15
+
 5. Tentukan algoritma dan pseudocode volume tabung (jari-jari = 3, tinggi = 5)
 Algoritma:
-1. Import library math
-2. Buat fungsi volume tabung dengan argumen r dan t
-3. mengembalikan nilai dengan rumus volume tabung yaitu pi x r^2 x t
-4. Buat variabel jari jari dengan nilai 3
-5. Buat variabel tinggi dengan nilai 5
-6. Tampilkan fungsi dengan mengisi argumen r dan t
-Pseudocode
-import math
-fungsi volume_tabung(r, t)
-return pi*r**2*t
-jari_jari = 3
-tinggi = 5
-tampilkan volume_tabung
-Kode:
+
+#1. Import library math
+#2. Buat fungsi volume tabung dengan argumen r dan t
+#3. mengembalikan nilai dengan rumus volume tabung yaitu pi x r^2 x t
+#4. Buat variabel jari jari dengan nilai 3
+#5. Buat variabel tinggi dengan nilai 5
+#6. Tampilkan fungsi dengan mengisi argumen r dan t
+#Pseudocode
+#import math
+#fungsi volume_tabung(r, t)
+#return pi*r**2*t
+#jari_jari = 3
+#tinggi = 5
+#tampilkan volume_tabung
+#Kode:
 import math
 def volume_tabung(r, t):
  return math.pi*r**2*t
@@ -154,24 +174,32 @@ jari_jari = 3
 tinggi = 5
 print("Jari-jari =", jari_jari, "\nTinggi =", tinggi, "\nLuas = ", volume_tabung(jari_jari,
 tinggi))
+
+hasil:
+Jari-jari = 3 
+Tinggi = 5 
+Luas =  141.3716694115407
+
 6. Tentukan algoritma dan pseudocode volume kerucut (diameter = 5, tinggi = 4)
 Algoritma:
-1. import library math
-2. Buat fungsi volume kerucut dengan argumen d dan t
-3. Buat variabel r untuk jari-jari dengan nilai d/2 atau diameter / 2
-4. mengembalikan nilai dengan rumus volume kerucut yaitu 1/3 x pi x r^2 x t
-5. Buat variabel diameter dengan nilai 5
-6. Buat variabel tinggi dengan nilai 4
-7. Tampilkan fungsi dengan mengisi argumen d dan t
-Pseudocode:
-import math
-fungsi volume_kerucut(d,t)
-r = d/2
-return 1/3*pi*r**2*t
-diameter = 5
-tinggi = 4
-tampilkan volume_kerucut
-Kode:
+
+#1. import library math
+#2. Buat fungsi volume kerucut dengan argumen d dan t
+#3. Buat variabel r untuk jari-jari dengan nilai d/2 atau diameter / 2
+#4. mengembalikan nilai dengan rumus volume kerucut yaitu 1/3 x pi x r^2 x t
+#5. Buat variabel diameter dengan nilai 5
+#6. Buat variabel tinggi dengan nilai 4
+#7. Tampilkan fungsi dengan mengisi argumen d dan t
+#Pseudocode:
+#import math
+3fungsi volume_kerucut(d,t)
+#r = d/2
+#return 1/3*pi*r**2*t
+#diameter = 5
+#tinggi = 4
+#tampilkan volume_kerucut
+#Kode:
+
 import math
 def volume_kerucut(d, t):
  r = d/2
@@ -180,3 +208,9 @@ diameter = 5
 tinggi = 4
 print("Diameter =", diameter, "\nTinggi =", tinggi, "\nVolume = ",
 volume_kerucut(diameter, tinggi))
+
+hasil:
+Diameter = 5 
+Tinggi = 4 
+Volume =  26.17993877991494
+
